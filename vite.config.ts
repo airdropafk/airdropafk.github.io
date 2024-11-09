@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Root path for airdropafk.github.io
+  base: '/airdropafk.github.io/', // Update base URL to match repository name
   resolve: {
     dedupe: ['react', 'react-dom'],
   },
