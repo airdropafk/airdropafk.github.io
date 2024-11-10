@@ -12,7 +12,9 @@ export function WalletConnect() {
     return (
       <button
         onClick={() => disconnect()}
-        className="flex items-center space-x-2 bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition-all"
+        className="flex items-center space-x-2 bg-red-500 hover:bg-red-600 text-white px-6 py-2.5 rounded-lg transition-all duration-200
+                   shadow-[0_0_0_3px_rgba(239,68,68,0.1)] hover:shadow-[0_0_0_3px_rgba(239,68,68,0.2)]
+                   active:transform active:scale-95"
       >
         <LogOut className="w-5 h-5" />
         <span>Disconnect {address.slice(0, 6)}...{address.slice(-4)}</span>
@@ -23,7 +25,7 @@ export function WalletConnect() {
   return (
     <button
       onClick={() => connect({ connector: injected() })}
-      className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all"
+      className="btn-primary flex items-center space-x-2"
     >
       <Wallet2 className="w-5 h-5" />
       <span>Connect Wallet</span>
